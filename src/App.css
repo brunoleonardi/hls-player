@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: #f9f8ff;
 }
 
-.App-link {
-  color: #61dafb;
+.App-container {
+  width: 100%;
+  max-width: 860px;
+  background: #f0eeff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0px 0px 5px #00000030;
+  backdrop-filter: blur(4px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-container h1 {
+  margin: 0;
+}
+
+.App-description {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.App-description code {
+  background: #dcd8fd;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.Stream-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Stream-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Stream-label {
+  font-weight: 600;
+}
+
+.Stream-select {
+  appearance: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Stream-inputGroup {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Stream-inputGroup input {
+  flex: 1 1 320px;
+  min-width: 240px;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  font-size: 1rem;
+}
+
+.Stream-inputGroup button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #4ab813;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Player-wrapper {
+  margin-top: 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px #0000002b;
+  background: #000;
+}
+
+.Player-wrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
