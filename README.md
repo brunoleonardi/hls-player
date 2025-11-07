@@ -1,4 +1,4 @@
-# HLS Player (POC)
+# HLS Player
 
 Aplicação React simples demonstrando como reproduzir streams HLS usando a biblioteca [`react-hls-player`](https://www.npmjs.com/package/react-hls-player). A página exibe:
 
