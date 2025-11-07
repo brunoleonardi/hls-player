@@ -46,7 +46,7 @@ function App() {
 
         <section className="Stream-section">
           <label className="Stream-label" htmlFor="stream-select">
-            Selecione uma stream
+            Selecione uma stream 
           </label>
           <select
             id="stream-select"
